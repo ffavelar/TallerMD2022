@@ -1,6 +1,6 @@
 #include "./Slipids_2020.ff/forcefield.itp"
-#include "dppc.itp"
-#include "cholesterol.itp"
+#include "./Slipids_2020.ff/dppc.itp"
+#include "./Slipids_2020.ff/cholesterol.itp"
 #include "./Slipids_2020.ff/TIP3p.itp"
 
 [ system ]

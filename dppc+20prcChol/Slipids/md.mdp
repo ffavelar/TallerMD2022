@@ -1,44 +1,40 @@
-integrator               = md			; MD integrator
+integrator               = md
 tinit                    = 0
-dt                       = 0.002		; 2 fs timestep
-nsteps                   = 12500000		; Number of steps
-pbc			 = xyz			; Periodic boundary conditions in xyz
-comm-mode                = linear			
+dt                       = 0.002
+nsteps                   = 500000
+comm-mode                = Linear
 nstcomm                  = 1
 
-; OUTPUT CONTROL OPTIONS
-nstxout                  = 0			; Do not want .trr-files
-nstxout-compressed       = 5000			; But do want .xtc-files
-compressed-x-precision   = 10000
-nstvout                  = 0			; No velocities in output
-nstfout                  = 0			; No forces in output
-nstlist			 = 10			; Update neighbor list between cut-offs
-ns_type			 = grid			; Fastest option
-nstcalcenergy		 = 1000 		; .edr-file output
-energygrps		 = POPC SOL		; Energy groups
+nstxout			 = 0
+nstvout			 = 0
+nstlog                   = 500
+nstenergy                = 1000
+nstxtcout                = 1000
 
-; OPTIONS FOR ELECTROSTATICS AND VDW
-cutoff-scheme            = Verlet
-coulombtype              = pme			; Particle mesh Ewald, do not change
-rcoulomb                 = 1.4			; Real-space cut-off
-rlist			 = 1.4			; Short-range neighbor list
-rvdw                     = 1.4			; 
-DispCorr                 = EnerPres		; Dispersion corrections to both the potential and pressure
-table-extension          = 1
-fourierspacing		 = 0.1			; PME grid
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1
 
-; OPTIONS FOR WEAK COUPLING ALGORITHMS
-; Groups to couple separately
-tc-grps                  = POPC SOL
-tcoupl                   = v-rescale		; Thermostat, v-rescale is also fine
-tau-t                    = 0.5 0.5		; Time constant for temperature coupling
-ref-t                    = 303 303		; Desired temperature (K)
-Pcoupl                   = berendsen		; Barostat
-Pcoupltype               = semiisotropic	; Pressure in xy and z couple separately
-ref-p                    = 1.013 1.013		; Desired pressure (bar)
-tau-p                    = 10.0 		; Time constant for pressure coupling
-compressibility          = 4.5e-5 4.5e-5	; Same as for water
+coulombtype              = pme
+rcoulomb                 = 1.0
+vdw-type                 = Cut-off
+rvdw                     = 1.0
+DispCorr                 = EnerPres
 
-; CONSTRAINTS
-constraints              = all-bonds		; Constrain all bonds
-constraint-algorithm     = Lincs		; With Lincs
+Tcoupl                   = V-rescale
+;tc-grps                  = Other Water_and_ions
+tc-grps                  = non-Water Water
+tau-t                    = 0.5 0.5
+ref-t                    = 323 323 ; DEPENDS ON THE SIMULATION
+Pcoupl                   = Parrinello-Rahman
+Pcoupltype               = semiisotropic
+tau-p                    = 1.0
+compressibility          = 4.5e-5 4.5e-5
+ref-p                    = 1.0 1.0
+
+constraints              = all-bonds
+constraint-algorithm     = Lincs
+lincs-order              = 4
+lincs-iter               = 1
+lincs-warnangle          = 30
