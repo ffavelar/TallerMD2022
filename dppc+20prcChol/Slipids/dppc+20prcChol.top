@@ -1,0 +1,14 @@
+#include "./Slipids_2020.ff/forcefield.itp"
+#include "dppc.itp"
+#include "cholesterol.itp"
+#include "./Slipids_2020.ff/TIP3p.itp"
+
+[ system ]
+; Name
+DPPC+20prc_CHOL - 100 lipids & 35 H2O/lipid
+
+[ molecules ]
+; Compound	#mols
+DPPC             160
+CHL1              40
+SOL             7000
