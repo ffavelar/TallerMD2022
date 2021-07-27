@@ -1,0 +1,31 @@
+# This file was created Tue Jul 27 17:57:43 2021
+# Created by:
+#                      :-) GROMACS - gmx order, 2021.2 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/ffavela/Documents/GitHub/TallerMD2021/dppc+20prcChol/Slipids
+# Command line:
+#   gmx order -s 323k/md_1ns.tpr -f 323k/md_1ns.xtc -n ANALYSIS/sn1.ndx -d z -od ANALYSIS/deuter_sn1.xvg
+# gmx order is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "Deuterium order parameters"
+@    xaxis  label "Atom"
+@    yaxis  label "Scd"
+@TYPE xy
+           1       0.141832
+           2        0.18408
+           3       0.220212
+           4       0.230876
+           5        0.23784
+           6       0.231244
+           7         0.2256
+           8       0.215754
+           9       0.204655
+          10       0.185927
+          11       0.170018
+          12       0.147395
+          13       0.120649
+          14      0.0880889

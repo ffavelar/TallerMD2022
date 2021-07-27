@@ -1,0 +1,31 @@
+# This file was created Tue Jul 27 17:57:18 2021
+# Created by:
+#                      :-) GROMACS - gmx order, 2021.2 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/ffavela/Documents/GitHub/TallerMD2021/dppc+20prcChol/Slipids
+# Command line:
+#   gmx order -s 323k/md_1ns.tpr -f 323k/md_1ns.xtc -n ANALYSIS/sn2.ndx -d z -od ANALYSIS/deuter_sn2.xvg
+# gmx order is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "Deuterium order parameters"
+@    xaxis  label "Atom"
+@    yaxis  label "Scd"
+@TYPE xy
+           1       0.165669
+           2       0.176277
+           3       0.240343
+           4       0.226649
+           5       0.246222
+           6       0.224237
+           7       0.223049
+           8       0.202109
+           9        0.19342
+          10       0.171421
+          11       0.158646
+          12       0.133519
+          13       0.117825
+          14      0.0849189
