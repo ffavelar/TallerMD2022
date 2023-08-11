@@ -1,15 +1,15 @@
-# This file was created Tue Jul 27 14:59:39 2021
+# This file was created Thu Aug 10 10:48:25 2023
 # Created by:
 #                      :-) GROMACS - gmx energy, 2021.2 (-:
 # 
 # Executable:   /usr/local/gromacs/bin/gmx
 # Data prefix:  /usr/local/gromacs
-# Working dir:  /Users/ffavela/Documents/GitHub/TallerMD2021/dppc+20prcChol/Slipids/MINIMIZ
+# Working dir:  /Users/ffavela/Documents/GitHub/TallerMD2023/dppc+20prcChol/Slipids/MINIMIZ
 # Command line:
 #   gmx energy -f minimiz.edr
 # gmx energy is part of G R O M A C S:
 #
-# Grunge ROck MAChoS
+# Glycine aRginine prOline Methionine Alanine Cystine Serine
 #
 @    title "GROMACS Energies"
 @    xaxis  label "Time (ps)"

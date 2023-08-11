@@ -1,0 +1,31 @@
+# This file was created Thu Aug 10 13:14:46 2023
+# Created by:
+#                      :-) GROMACS - gmx order, 2021.2 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/ffavela/Documents/GitHub/TallerMD2023/dppc+20prcChol/Slipids/ANALYSIS
+# Command line:
+#   gmx order -f ../323k/md_1ns.xtc -s ../323k/md_1ns.tpr -n sn1.ndx -o datasn1.xvg
+# gmx order is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "Order tensor diagonal elements"
+@    xaxis  label "Atom"
+@    yaxis  label "S"
+@TYPE xy
+           1     -0.0927252      -0.240046       0.332771
+           2      -0.153625      -0.244991       0.398616
+           3      -0.201619      -0.257399       0.459018
+           4      -0.222133      -0.248362       0.470495
+           5      -0.234719      -0.244081         0.4788
+           6      -0.234538      -0.224654       0.459193
+           7       -0.23008       -0.21664        0.44672
+           8      -0.218656      -0.209951       0.428607
+           9      -0.208524      -0.196919       0.405442
+          10      -0.186762      -0.184258        0.37102
+          11      -0.174795      -0.160462       0.335258
+          12      -0.148972      -0.144241       0.293213
+          13      -0.123345      -0.115258       0.238603
+          14     -0.0883981     -0.0874705       0.175869

@@ -1,0 +1,31 @@
+# This file was created Thu Aug 10 13:15:18 2023
+# Created by:
+#                      :-) GROMACS - gmx order, 2021.2 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /Users/ffavela/Documents/GitHub/TallerMD2023/dppc+20prcChol/Slipids/ANALYSIS
+# Command line:
+#   gmx order -f ../323k/md_1ns.xtc -s ../323k/md_1ns.tpr -n sn2.ndx -o datasn2.xvg
+# gmx order is part of G R O M A C S:
+#
+# GROup of MAchos and Cynical Suckers
+#
+@    title "Order tensor diagonal elements"
+@    xaxis  label "Atom"
+@    yaxis  label "S"
+@TYPE xy
+           1      -0.166568       -0.16387       0.330438
+           2      -0.181968      -0.164895       0.346863
+           3      -0.246609      -0.227811        0.47442
+           4      -0.230133       -0.21968       0.449814
+           5      -0.252805      -0.233056       0.485861
+           6      -0.223229      -0.226254       0.449483
+           7      -0.225821      -0.217504       0.443326
+           8       -0.20289      -0.200547       0.403437
+           9       -0.20023        -0.1798        0.38003
+          10      -0.175287      -0.163688       0.338975
+          11      -0.165975      -0.143987       0.309962
+          12      -0.134943      -0.130669       0.265612
+          13      -0.122459      -0.108556       0.231015
+          14     -0.0879813     -0.0787942       0.166776
